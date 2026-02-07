@@ -151,19 +151,6 @@ sudo rm /usr/bin/postman
 
 ---
 
-## 📚 Notes
-
-* Snap method is easier and auto‑updates Postman.
-* Manual method gives more control over versions.
-* Requires sudo privileges.
-
----
-
-**Author:** Your Name
-**OS:** Kali Linux
-**Tool:** Postman API Client
--------------
-
 
 ## 📚 API Scope & Assumptions
 - REST-based API
@@ -206,3 +193,11 @@ sudo rm /usr/bin/postman
 ```http
 GET /api/users/123
 GET /api/users/124   ← unauthorized user ID
+```
+
+**Author:**   NATTO MUNI CHAKMA
+**OS:** Kali Linux
+**Tool:** Postman API Client
+-------------
+
+
