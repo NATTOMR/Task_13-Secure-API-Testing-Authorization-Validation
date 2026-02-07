@@ -372,7 +372,9 @@ It is used to delete a resource identified by a URI. On successful deletion, ret
 - Auth tab → Bearer Token
 - Token: testtoken123
 - Response: 200 OK
-  ![image]()
+  ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/authentication.png)
+
+  Note: 🎉 Authentication test PASSED
 
 ### Test Case 1: Valid Authentication
 - Authorization: Bearer Token
