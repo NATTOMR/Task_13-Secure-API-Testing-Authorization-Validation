@@ -229,35 +229,100 @@ Paste this free API URL:
 ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/postman%20dash-3.png)
 
 ### note: GET returns a representation in XML or JSON and an HTTP response code of 200 (OK)
+
 ## 2. POST Method
 The POST method is commonly used to create new resources. It is often used to create subordinate resources related to a parent resource. Upon successful creation, the server returns HTTP status 201 (Created) along with a Location header pointing to the newly created resource.
 
-`` POST /users
-{ 
-  "name": "Anjali", 
-  "email": "gfg@example.com"
-} ```
-
+```
+{
+    "args": {
+        "tester": "natto"
+    },
+    "data": "{\n  \"username\": \"natto\",\n  \"role\": \"tester\"\n}\n",
+    "files": {},
+    "form": {},
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Content-Length": "46",
+        "Content-Type": "application/json",
+        "Host": "httpbin.org",
+        "Postman-Token": "69c67ce9-b4b6-4bec-aa78-ff4b5cdbfee6",
+        "User-Agent": "PostmanRuntime/7.51.1",
+        "X-Amzn-Trace-Id": "Root=1-698732eb-14a9ea320b8076dd60603ccc"
+    },
+    "json": {
+        "role": "tester",
+        "username": "natto"
+    },
+    "origin": "106.200.28.147",
+    "url": "https://httpbin.org/post?tester=natto"
+}
+```
 This request creates a new user with the given data.
+
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/post.png)
 
  NOTE:  POST is neither safe nor idempotent. 
 
 ## 3. PUT Method
 PUT is an HTTP method used to update or create a resource on the server. When using PUT, the entire resource is sent in the request body, and it replaces the current resource at the specified URL. If the resource doesn’t exist, it can create a new one.
 
-```PUT /users/123
-{ 
-  "name": "Anjali", 
-  "email": "gfg@example.com"
+PUT user natto-1
+```
+{
+    "args": {
+        "tester": "natto"
+    },
+    "data": "",
+    "files": {},
+    "form": {},
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Content-Length": "0",
+        "Host": "httpbin.org",
+        "Postman-Token": "b11b9d88-5878-4444-a3bf-c67acd41b30b",
+        "User-Agent": "PostmanRuntime/7.51.1",
+        "X-Amzn-Trace-Id": "Root=1-6987341a-06e8de1f711f0cc65fffc5b4"
+    },
+    "json": null,
+    "origin": "106.200.28.147",
+    "url": "https://httpbin.org/put?tester=natto"
 }
 ```
-This request updates the user with ID 123 or creates a new user if one doesn't exist.
+![image]()
+Note:
 
 ## 5. DELETE Method
 It is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body.
-
+PUT user natto-1
 ```
-DELETE /users/123
+{
+    "args": {
+        "tester": [
+            "natto",
+            "natto"
+        ]
+    },
+    "data": "",
+    "files": {},
+    "form": {},
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Host": "httpbin.org",
+        "Postman-Token": "7f8ffbe5-a3a3-4bf1-bfb8-728ee1af9a0a",
+        "User-Agent": "PostmanRuntime/7.51.1",
+        "X-Amzn-Trace-Id": "Root=1-6987354a-6246650c57eaa37773c9493b"
+    },
+    "json": null,
+    "origin": "106.200.28.147",
+    "url": "https://httpbin.org/delete?tester=natto&tester=natto"
+}
 ```
 This request deletes the user with ID 123.
 
