@@ -226,7 +226,7 @@ Paste this free API URL:
     "url": "https://httpbin.org/get?role=natto&=tester"
 }
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/postman%20dash-3.png)
 
 ## 2. POST Method
 The POST method is commonly used to create new resources. It is often used to create subordinate resources related to a parent resource. Upon successful creation, the server returns HTTP status 201 (Created) along with a Location header pointing to the newly created resource.
