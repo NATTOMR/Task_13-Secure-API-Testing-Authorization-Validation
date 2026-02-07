@@ -365,6 +365,35 @@ It is used to delete a resource identified by a URI. On successful deletion, ret
 
 ---
 
+## 🔐 Authentication Testing
+
+### Endpoint
+- URL: `https://httpbin.org/bearer`
+- Auth tab → Bearer Token
+- Token: testtoken123
+- Response: 200 OK
+  ![image]()
+
+### Test Case 1: Valid Authentication
+- Authorization: Bearer Token
+- Result: 200 OK
+- Observation: Authenticated access allowed
+
+### Test Case 2: Missing Authentication
+- Go to Auth tab
+- Change Auth Type → No Auth
+- Authorization header removed
+- Result: 401 Unauthorized
+- Observation: Unauthenticated access denied
+  ![image]()
+
+### Conclusion
+The API correctly enforces authentication by allowing access only when a valid Bearer token is provided.
+
+OWASP Mapping: API2 – Broken Authentication (Secure)
+
+
+
 ### 2. Authentication Testing
 **Tests Performed**
 - Valid credentials → Confirm authorized access
