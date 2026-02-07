@@ -402,10 +402,7 @@ The authentication header was removed and the request was resent to verify wheth
 - Auth Type: No Auth
 - URL: /bearer
 - Response: 401 Unauthorized
-  ![image]()
-### Endpoint
-https://httpbin.org/bearer
-
+  ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/without%20token.png)
 ### Result
 - Authorization: Removed
 - HTTP Status: 401 Unauthorized
