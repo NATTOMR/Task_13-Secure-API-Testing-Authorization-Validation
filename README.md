@@ -172,9 +172,61 @@ REST API stands for Representational State Transfer API. It is a type of API (Ap
 
 ## 1. GET Method
 The HTTP GET method is used to read (or retrieve) a representation of a resource. In the safe path, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
-```GET /users/123
+```
+GET natto
 ```
 This request fetches data for the user with ID 123
+
+## ✅ STEP 1: Add a FREE GET URL (Do This First)
+
+In the middle of your screen you see:
+
+```
+GET   Enter URL or paste text   [Send]
+```
+
+- 👉 Click inside “Enter URL or paste text”
+
+Paste this free API URL:
+
+```
+ https://httpbin.org/get
+```
+## ✅ STEP 2: Send the Request
+
+- Click the blue Send button.
+
+- What should happen:
+
+- At the bottom (Response section), you should see:
+
+- Status: 200 OK
+
+- Response body (JSON)
+
+  ![image]()
+-  Example:
+   
+  ```
+{
+    "args": {
+        "": "tester",
+        "role": "natto"
+    },
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Host": "httpbin.org",
+        "Postman-Token": "5987e34c-da8b-4ea3-870d-15dbee5054f5",
+        "User-Agent": "PostmanRuntime/7.51.1",
+        "X-Amzn-Trace-Id": "Root=1-69872bd6-0edf1768792dcbdc16dbf9d3"
+    },
+    "origin": "106.200.28.147",
+    "url": "https://httpbin.org/get?role=natto&=tester"
+}
+```
+![image]()
 
 ## 2. POST Method
 The POST method is commonly used to create new resources. It is often used to create subordinate resources related to a parent resource. Upon successful creation, the server returns HTTP status 201 (Created) along with a Location header pointing to the newly created resource.
