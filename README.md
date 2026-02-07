@@ -17,7 +17,7 @@
 
 ---
 
-# Task 13: Secure API Testing & Authorization Validation
+# Secure API Testing & Authorization Validation
 
 ## 📌 Project Overview
 This project focuses on **testing REST API security controls**, with an emphasis on **authentication, authorization, input validation, and rate limiting**. The goal is to identify common API misconfigurations and vulnerabilities using industry-standard tools and methodologies.
