@@ -354,7 +354,7 @@ It is used to delete a resource identified by a URI. On successful deletion, ret
     "url": "https://httpbin.org/delete?tester=natto&tester=natto"
 }
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/delete.png)
 
 ## 🔍 Testing Methodology
 
