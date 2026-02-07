@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="API banner.png" alt="Secure API Testing Banner" />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/API%20Security-OWASP%20Top%2010-red?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Tool-Postman-orange?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/OS-Kali%20Linux-blue?style=for-the-badge"/>
@@ -10,13 +14,6 @@
   A hands-on cybersecurity project focused on identifying authentication, authorization,
   input validation, and rate limiting issues in REST APIs using OWASP API Security Top 10.
 </p>
-
----
-
-## 👨‍💻 Author
-
-**NATTO MUNI CHAKMA**  
-Cybersecurity Enthusiast | API Security | Kali Linux | OWASP
 
 ---
 
@@ -507,9 +504,12 @@ You check 429 Too Many Requests by sending many requests quickly; if it never ap
 
 This project is for educational and ethical testing purposes only. All testing was conducted using public test APIs in non-production environments.
 
-**Author:**   NATTO MUNI CHAKMA
-- **OS:** Kali Linux
-- **Tool:** Postman API Client
--------------
+## 👨‍💻 Author
+
+**NATTO MUNI CHAKMA**  
+Cybersecurity Enthusiast | API Security | Kali Linux | OWASP
+
+---
+
 
 
