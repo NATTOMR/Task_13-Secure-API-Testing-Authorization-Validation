@@ -24,6 +24,146 @@ All testing is performed from a **black-box perspective**, simulating how an att
 - **Insomnia** (Alternative)
 
 ---
+# Install Postman on Kali Linux
+
+This guide provides step‑by‑step instructions to install **Postman** on Kali Linux.
+
+---
+
+## 📌 Method 1 — Install Postman via Snap (Recommended)
+
+### Step 1: Update System Packages
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### Step 2: Install Snapd
+
+```bash
+sudo apt install snapd -y
+```
+
+### Step 3: Enable & Start Snap Service
+
+```bash
+sudo systemctl enable --now snapd
+```
+
+### Step 4: Install Postman
+
+```bash
+sudo snap install postman
+```
+
+### Step 5: Launch Postman
+
+```bash
+postman
+```
+
+---
+
+## 📌 Method 2 — Install Postman Manually (Official Tar Package)
+
+### Step 1: Download Postman
+
+```bash
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+```
+
+### Step 2: Extract the Archive
+
+```bash
+sudo tar -xzf postman.tar.gz -C /opt
+```
+
+### Step 3: Create Symbolic Link
+
+```bash
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+```
+
+### Step 4: Launch Postman
+
+```bash
+postman
+```
+
+---
+
+## 📌 (Optional) Create Desktop Entry
+
+Create a desktop shortcut so Postman appears in the application menu.
+
+```bash
+nano ~/.local/share/applications/postman.desktop
+```
+
+Paste the following:
+
+```ini
+[Desktop Entry]
+Name=Postman
+Exec=/opt/Postman/Postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Type=Application
+Categories=Development;
+```
+
+Save and exit:
+
+* Press **CTRL + O** → Enter
+* Press **CTRL + X**
+
+Refresh applications:
+
+```bash
+update-desktop-database ~/.local/share/applications
+```
+
+---
+
+## ✅ Verify Installation
+
+```bash
+postman --version
+```
+
+If Postman opens successfully, the installation is complete.
+
+---
+
+## 🧹 Uninstall Postman
+
+### If installed via Snap
+
+```bash
+sudo snap remove postman
+```
+
+### If installed manually
+
+```bash
+sudo rm -rf /opt/Postman
+sudo rm /usr/bin/postman
+```
+
+---
+
+## 📚 Notes
+
+* Snap method is easier and auto‑updates Postman.
+* Manual method gives more control over versions.
+* Requires sudo privileges.
+
+---
+
+**Author:** Your Name
+**OS:** Kali Linux
+**Tool:** Postman API Client
+-------------
+
 
 ## 📚 API Scope & Assumptions
 - REST-based API
