@@ -162,6 +162,46 @@ sudo rm /usr/bin/postman
 
 ---
 
+## REST API stands for Representational State Transfer API. It is a type of API (Application Programming Interface) that allows communication between different systems over the internet. REST APIs work by sending requests and receiving responses, typically in JSON format, between the client and server.
+
+![image]()
+- A request is sent from the client to the server via a web URL, using one of the HTTP methods.
+- The server then responds with the requested resource, which could be HTML, XML, Image, or JSON, with JSON being the most commonly used format for modern web services.
+- These methods map to CRUD operations (Create, Read, Update, Delete) for managing resources on the web.
+
+## 1. GET Method
+The HTTP GET method is used to read (or retrieve) a representation of a resource. In the safe path, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
+`GET /users/123`
+This request fetches data for the user with ID 123
+
+## 2. POST Method
+The POST method is commonly used to create new resources. It is often used to create subordinate resources related to a parent resource. Upon successful creation, the server returns HTTP status 201 (Created) along with a Location header pointing to the newly created resource.
+
+`POST /users
+{ 
+  "name": "Anjali", 
+  "email": "gfg@example.com"
+}
+This request creates a new user with the given data.`
+
+ NOTE:  POST is neither safe nor idempotent. 
+
+## 3. PUT Method
+PUT is an HTTP method used to update or create a resource on the server. When using PUT, the entire resource is sent in the request body, and it replaces the current resource at the specified URL. If the resource doesn’t exist, it can create a new one.
+
+`PUT /users/123
+{ 
+  "name": "Anjali", 
+  "email": "gfg@example.com"
+}`
+This request updates the user with ID 123 or creates a new user if one doesn't exist.
+
+## 5. DELETE Method
+It is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body.
+
+`DELETE /users/123`
+This request deletes the user with ID 123.
+
 ## 🔍 Testing Methodology
 
 ### 1. API Endpoint Configuration
