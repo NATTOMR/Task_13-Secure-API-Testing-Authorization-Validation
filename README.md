@@ -131,7 +131,7 @@ postman --version
 ```
 
 If Postman opens successfully, the installation is complete.
-
+![image]()
 ---
 
 ## 🧹 Uninstall Postman
