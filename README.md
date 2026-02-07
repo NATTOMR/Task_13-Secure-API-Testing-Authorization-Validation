@@ -411,17 +411,26 @@ The authentication header was removed and the request was resent to verify wheth
 
 ---
 
-### 3. Authorization Testing (Broken Object Level Authorization - BOLA)
-**Tests Performed**
-- Modified resource IDs in requests
-- Accessed objects belonging to other users
-- Tested role-based access (user vs admin endpoints)
+## 🔓 Authorization Testing (Broken Object Level Authorization – BOLA)
 
-**Example**
-```http
-GET /api/users/123
-GET /api/users/124   ← unauthorized user ID
-```
+### Endpoint
+https://jsonplaceholder.typicode.com/users/{id}
+
+### Test Description
+Object identifiers in the API endpoint were modified to test whether unauthorized access to other users’ data was possible.
+
+### Test Cases
+- GET /users/1 → 200 OK
+- GET /users/2 → 200 OK
+
+### Observation
+The API returned data for different user IDs when the object identifier was modified.
+
+### Security Analysis
+In a real-world authenticated environment, this behavior could lead to Broken Object Level Authorization if proper access controls are not enforced.
+
+### Expected Secure Behavior
+The API should validate ownership and return `403 Forbidden` for unauthorized object access.
 
 **Author:**   NATTO MUNI CHAKMA
 **OS:** Kali Linux
