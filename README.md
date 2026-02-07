@@ -423,7 +423,7 @@ Object identifiers in the API endpoint were modified to test whether unauthorize
 - GET /users/1 → 200 OK
 - ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/BOLA%20-1.png)
 - GET /users/2 → 200 OK
-- ![image]()
+- ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/BOLA%20-2.png)
 
 ### Observation
 The API returned data for different user IDs when the object identifier was modified.
