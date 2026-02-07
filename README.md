@@ -293,7 +293,7 @@ PUT user natto-1
     "url": "https://httpbin.org/put?tester=natto"
 }
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/put.png)
 Note:
 
 4. PATCH Method
