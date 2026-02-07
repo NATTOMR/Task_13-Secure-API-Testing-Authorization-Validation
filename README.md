@@ -452,7 +452,12 @@ Malformed and unexpected input values were sent to evaluate server-side input va
   "role": "tester"
 }
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/valid%20input.png)
+
+Note: The initial POST request returned `"json": null`, indicating that no request body was sent.
+After configuring the request body using raw JSON format, the API correctly received and processed the input.
+Malformed input values were also accepted, highlighting the importance of strict server-side input validation in real-world APIs.
+
 
 **Author:**   NATTO MUNI CHAKMA
 **OS:** Kali Linux
