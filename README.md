@@ -131,7 +131,7 @@ postman --version
 ```
 
 If Postman opens successfully, the installation is complete.
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/postman%20install.png)
 ---
 
 ## 🧹 Uninstall Postman
