@@ -431,8 +431,28 @@ The API returned data for different user IDs when the object identifier was modi
 ### Security Analysis
 In a real-world authenticated environment, this behavior could lead to Broken Object Level Authorization if proper access controls are not enforced.
 
+
+
 ### Expected Secure Behavior
 The API should validate ownership and return `403 Forbidden` for unauthorized object access.
+
+## 🧪 Input Validation Testing
+
+### Endpoint
+`https://httpbin.org/post`
+
+### Test Description
+Malformed and unexpected input values were sent to evaluate server-side input validation controls.
+
+### Test Cases
+**Valid Input**
+```json
+{
+  "username": "natto",
+  "role": "tester"
+}
+```
+![image]()
 
 **Author:**   NATTO MUNI CHAKMA
 **OS:** Kali Linux
