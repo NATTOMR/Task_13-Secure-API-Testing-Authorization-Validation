@@ -1,3 +1,83 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/API%20Security-OWASP%20Top%2010-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Tool-Postman-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/OS-Kali%20Linux-blue?style=for-the-badge"/>
+</p>
+
+<h1 align="center">🔐 Secure API Testing & Authorization Validation</h1>
+
+<p align="center">
+  A hands-on cybersecurity project focused on identifying authentication, authorization,
+  input validation, and rate limiting issues in REST APIs using OWASP API Security Top 10.
+</p>
+
+---
+
+## 🧠 What This Project Demonstrates
+
+✅ Real-world **API security testing methodology**  
+✅ Hands-on testing using **Postman & cURL**  
+✅ Practical understanding of **OWASP API Top 10 risks**  
+✅ Black-box testing mindset (attacker perspective)  
+✅ Professional documentation with screenshots & analysis  
+
+---
+
+## 🎯 Key Security Tests Performed
+
+🔑 **Authentication Testing**
+- Valid & missing Bearer token validation
+- Unauthorized access prevention (`401 Unauthorized`)
+
+🧩 **Authorization Testing (BOLA)**
+- Object ID manipulation
+- Unauthorized resource access analysis
+
+🧪 **Input Validation Testing**
+- Malformed JSON & unexpected data types
+- Mass assignment risk analysis
+
+🚦 **Rate Limiting Testing**
+- High-frequency request testing
+- Identification of missing throttling controls
+
+---
+
+## 🛠️ Tools & Environment
+
+- **Postman API Client**
+- **cURL**
+- **Kali Linux**
+- Public test APIs (httpbin, JSONPlaceholder)
+
+---
+
+## 🧩 OWASP API Security Mapping
+
+| Risk | Status |
+|----|----|
+| API1 – Broken Object Level Authorization | Tested |
+| API2 – Broken Authentication | Tested |
+| API4 – Lack of Rate Limiting | Tested |
+| API6 – Mass Assignment | Analyzed |
+| API8 – Security Misconfiguration | Analyzed |
+
+---
+
+## 📌 Why This Project Matters
+
+> APIs are the backbone of modern applications — and one of the most attacked surfaces.
+> This project demonstrates practical skills in identifying **real API security weaknesses**
+> using industry-recognized standards.
+
+---
+
+## 👨‍💻 Author
+
+**NATTO MUNI CHAKMA**  
+Cybersecurity Enthusiast | API Security | Kali Linux | OWASP
+
+---
 
 # Task 13: Secure API Testing & Authorization Validation
 
@@ -482,6 +562,9 @@ OWASP Mapping: API4 – Lack of Resources & Rate Limiting
 
 You check 429 Too Many Requests by sending many requests quickly; if it never appears, rate limiting is not enforced and should be documented as a risk.
 
+## ⚠️ Disclaimer
+
+This project is for educational and ethical testing purposes only. All testing was conducted using public test APIs in non-production environments.
 
 **Author:**   NATTO MUNI CHAKMA
 - **OS:** Kali Linux
