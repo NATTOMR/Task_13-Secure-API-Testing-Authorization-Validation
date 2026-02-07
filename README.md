@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="API banner.png" alt="Secure API Testing Banner" />
+  <img src="API banner.png" alt="API Security Testing Lab Banner">
 </p>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/API%20Security-OWASP%20Top%2010-red?style=for-the-badge"/>
@@ -503,6 +504,73 @@ You check 429 Too Many Requests by sending many requests quickly; if it never ap
 ## ⚠️ Disclaimer
 
 This project is for educational and ethical testing purposes only. All testing was conducted using public test APIs in non-production environments.
+
+## 📎 References & Learning Resources
+
+This project was completed using publicly available documentation, public test APIs, and industry-recognized security standards related to REST API security testing.
+
+---
+
+### 🔐 OWASP API Security
+- **OWASP API Security Top 10**  
+  https://owasp.org/API-Security/
+
+- **OWASP API Security Top 10 – GitHub Repository**  
+  https://github.com/OWASP/API-Security
+
+---
+
+### 🌐 Public Test APIs Used
+- **httpbin** – HTTP request & response testing service  
+  https://httpbin.org/
+
+- **JSONPlaceholder** – Fake REST API for testing and prototyping  
+  https://jsonplaceholder.typicode.com/
+
+---
+
+### 🧪 API Testing Tools
+- **Postman Official Documentation**  
+  https://learning.postman.com/
+
+- **Postman API Client Downloads**  
+  https://www.postman.com/downloads/
+
+- **cURL Manual**  
+  https://curl.se/docs/manual.html
+
+---
+
+### 📚 REST API Fundamentals
+- **REST API Concepts – Mozilla Developer Network (MDN)**  
+  https://developer.mozilla.org/en-US/docs/Glossary/REST
+
+- **HTTP Methods Overview – MDN**  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+- **HTTP Status Codes – MDN**  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+---
+
+### 🚦 Rate Limiting & API Security Concepts
+- **API Rate Limiting Explained (MDN)**  
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After
+
+- **OWASP – API Abuse & Rate Limiting Risks**  
+  https://owasp.org/www-project-api-security/
+
+---
+
+### 🛡️ Authorization & Access Control
+- **Broken Object Level Authorization (BOLA)**  
+  https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/
+
+- **Broken Authentication**  
+  https://owasp.org/API-Security/editions/2023/en/0xa2-broken-authentication/
+
+---
+
 
 ## 👨‍💻 Author
 
