@@ -232,7 +232,7 @@ Paste this free API URL:
 
 ## 2. POST Method
 The POST method is commonly used to create new resources. It is often used to create subordinate resources related to a parent resource. Upon successful creation, the server returns HTTP status 201 (Created) along with a Location header pointing to the newly created resource.
-
+POST user natto-2
 ```
 {
     "args": {
@@ -269,7 +269,7 @@ This request creates a new user with the given data.
 ## 3. PUT Method
 PUT is an HTTP method used to update or create a resource on the server. When using PUT, the entire resource is sent in the request body, and it replaces the current resource at the specified URL. If the resource doesn’t exist, it can create a new one.
 
-PUT user natto-1
+`PUT user natto-1`
 ```
 {
     "args": {
@@ -296,10 +296,10 @@ PUT user natto-1
 ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/put.png)
 Note:
 
-4. PATCH Method
+## 4. PATCH Method
 PATCH is an HTTP method used to partially update a resource on the server. Unlike PUT, PATCH only requires the fields that need to be updated to be sent in the request body. It modifies specific parts of the resource rather than replacing the entire resource.
 
-PATCH user natto-3
+`PATCH user natto-3`
 ```
 {
     "args": {
@@ -323,11 +323,12 @@ PATCH user natto-3
     "url": "https://httpbin.org/patch?tester=natto"
 }
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/patch.png)
 
 ## 5. DELETE Method
 It is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body.
-PUT user natto-1
+
+`PUT user natto-1`
 ```
 {
     "args": {
