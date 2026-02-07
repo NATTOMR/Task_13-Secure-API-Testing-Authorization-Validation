@@ -458,6 +458,24 @@ Note: The initial POST request returned `"json": null`, indicating that no reque
 After configuring the request body using raw JSON format, the API correctly received and processed the input.
 Malformed input values were also accepted, highlighting the importance of strict server-side input validation in real-world APIs.
 
+## 🚦 Rate Limiting Testing
+
+### Endpoint
+https://httpbin.org/get
+![image]()
+### Test Description
+Multiple rapid requests were sent to the API endpoint to evaluate rate limiting and abuse prevention mechanisms.
+
+### Observation
+The API responded with `200 OK` for all repeated requests, indicating that no rate limiting was enforced.
+
+### Security Analysis
+In a real-world environment, the absence of rate limiting could allow brute-force attacks and denial-of-service conditions.
+
+### Expected Secure Behavior
+The API should restrict excessive requests and return `429 Too Many Requests`.
+
+OWASP Mapping: API4 – Lack of Resources & Rate Limiting
 
 **Author:**   NATTO MUNI CHAKMA
 **OS:** Kali Linux
