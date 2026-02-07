@@ -477,9 +477,15 @@ The API should restrict excessive requests and return `429 Too Many Requests`.
 
 OWASP Mapping: API4 – Lack of Resources & Rate Limiting
 
+
+## ✅ Final Answer (One Line)
+
+You check 429 Too Many Requests by sending many requests quickly; if it never appears, rate limiting is not enforced and should be documented as a risk.
+
+
 **Author:**   NATTO MUNI CHAKMA
-**OS:** Kali Linux
-**Tool:** Postman API Client
+- **OS:** Kali Linux
+- **Tool:** Postman API Client
 -------------
 
 
