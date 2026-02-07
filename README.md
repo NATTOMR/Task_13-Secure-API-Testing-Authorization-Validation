@@ -204,7 +204,7 @@ Paste this free API URL:
 
 - Response body (JSON)
 
-  ![image]()
+  ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/postman%20dash-2.png)
 -  Example:
    
   ```
