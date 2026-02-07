@@ -462,7 +462,7 @@ Malformed input values were also accepted, highlighting the importance of strict
 
 ### Endpoint
 https://httpbin.org/get
-![image]()
+![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/rate%20limiting.png)
 ### Test Description
 Multiple rapid requests were sent to the API endpoint to evaluate rate limiting and abuse prevention mechanisms.
 
