@@ -391,23 +391,26 @@ It is used to delete a resource identified by a URI. On successful deletion, ret
 
   Note: ✔ This proves unauthenticated access is blocked
 
-### Conclusion
-The API correctly enforces authentication by allowing access only when a valid Bearer token is provided.
-
-OWASP Mapping: API2 – Broken Authentication (Secure)
-
-
-
-### 2. Authentication Testing
-**Tests Performed**
-- Valid credentials → Confirm authorized access
-- Invalid credentials → Expect `401 Unauthorized`
-- Expired token → Expect authentication failure
-- Missing authentication header → Verify access denial
-
 **Expected Behavior**
 - API should strictly require authentication
 - No endpoint should allow unauthenticated access
+
+## 🔐 Authentication Header Removal Test
+
+### Test Description
+The authentication header was removed and the request was resent to verify whether the API improperly allows unauthenticated access.
+- Auth Type: No Auth
+- URL: /bearer
+- Response: 401 Unauthorized
+  ![image]()
+### Endpoint
+https://httpbin.org/bearer
+
+### Result
+- Authorization: Removed
+- HTTP Status: 401 Unauthorized
+- Observation: Access denied without authentication
+
 
 ---
 
