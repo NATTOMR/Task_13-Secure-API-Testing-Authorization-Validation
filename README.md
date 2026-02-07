@@ -203,7 +203,8 @@ This request updates the user with ID 123 or creates a new user if one doesn't e
 ## 5. DELETE Method
 It is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body.
 
-```DELETE /users/123
+```
+DELETE /users/123
 ```
 This request deletes the user with ID 123.
 
