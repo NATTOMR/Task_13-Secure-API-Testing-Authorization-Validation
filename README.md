@@ -387,7 +387,9 @@ It is used to delete a resource identified by a URI. On successful deletion, ret
 - Authorization header removed
 - Result: 401 Unauthorized
 - Observation: Unauthenticated access denied
-  ![image]()
+  ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/authentication-1.png)
+
+  Note: ✔ This proves unauthenticated access is blocked
 
 ### Conclusion
 The API correctly enforces authentication by allowing access only when a valid Bearer token is provided.
