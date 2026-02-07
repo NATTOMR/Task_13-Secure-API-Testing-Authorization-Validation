@@ -228,7 +228,7 @@ Paste this free API URL:
 ```
 ![image](https://github.com/NATTOMR/Task_13-Secure-API-Testing-Authorization-Validation/blob/main/postman%20dash-3.png)
 
-### note: GET returns a representation in XML or JSON and an HTTP response code of 200 (OK)
+### Note: GET returns a representation in XML or JSON and an HTTP response code of 200 (OK)
 
 ## 2. POST Method
 The POST method is commonly used to create new resources. It is often used to create subordinate resources related to a parent resource. Upon successful creation, the server returns HTTP status 201 (Created) along with a Location header pointing to the newly created resource.
@@ -296,6 +296,35 @@ PUT user natto-1
 ![image]()
 Note:
 
+4. PATCH Method
+PATCH is an HTTP method used to partially update a resource on the server. Unlike PUT, PATCH only requires the fields that need to be updated to be sent in the request body. It modifies specific parts of the resource rather than replacing the entire resource.
+
+PATCH user natto-3
+```
+{
+    "args": {
+        "tester": "natto"
+    },
+    "data": "",
+    "files": {},
+    "form": {},
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "Content-Length": "0",
+        "Host": "httpbin.org",
+        "Postman-Token": "98624f42-2a42-4889-9774-685b7845a5d9",
+        "User-Agent": "PostmanRuntime/7.51.1",
+        "X-Amzn-Trace-Id": "Root=1-698734fb-1bb793e709265878318b26f2"
+    },
+    "json": null,
+    "origin": "106.200.28.147",
+    "url": "https://httpbin.org/patch?tester=natto"
+}
+```
+![image]()
+
 ## 5. DELETE Method
 It is used to delete a resource identified by a URI. On successful deletion, return HTTP status 200 (OK) along with a response body.
 PUT user natto-1
@@ -324,7 +353,7 @@ PUT user natto-1
     "url": "https://httpbin.org/delete?tester=natto&tester=natto"
 }
 ```
-This request deletes the user with ID 123.
+![image]()
 
 ## 🔍 Testing Methodology
 
